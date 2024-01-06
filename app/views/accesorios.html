@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Under Armour es una marca estadounidense, creada en 1996 por Kevin Plank y encargada de producir indumentaria deportiva " />
+    <link rel="stylesheet" type="text/css" href="public/css/indumentaria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Under Armour Argentina</title>
+
+    <link rel="icon" href="public/img/OIP.png" type="image/icon">
+
+    <script src="public/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="top" id="top">
+
+            <div class="promo">
+                <h2 id="prom"></h2>
+                <style>
+                    @keyframes cambioTexto {
+                        0% {
+                            content: "10% de descuento abonando en efectivo";
+                        }
+
+                        33% {
+                            content: "Envio gratis en compra mayores a $100.000";
+                        }
+
+                        66% {
+                            content: "Envios a todo el pais y a Uruguay";
+                        }
+
+                        100% {
+                            content: "Abona mediante Mercado pago, efectivo o tarjetas";
+                        }
+                    }
+
+                    #prom::before {
+                        content: "Texto 1";
+                        animation: cambioTexto 12s infinite;
+                    }
+                </style>
+            </div>
+            <div class="nav" id="nav">
+                <navbar>
+                    <a href="index.html"><img class="navlogo" width="5%" src="public/img/OIP.png"></a>
+                    <div class="navitems">
+                        <p class="item1"><a href="productos.html">Productos</a></p>
+                        <p class="item2"><a href="#footer">Contacto</a></p>
+                        <p class="item3"><a href="acercade.html">Sobre nosotros</a></p>
+                        <a class="cartnav" id="abrir-carrito" onclick="toggleCarrito()"><i class='bx bx-cart'></i></a>
+                    </div>
+                </navbar>
+            </div>
+        </section>
+    </header>
+    <div class="main">
+        <img class="imgprincipal" src="public/img/pexels-pixabay-415261.jpg">
+    </div>
+    <section class="mid" id="mid">
+
+
+        <h2 class="h2off">Ofertas IMPERDIBLES</h2>
+        <div class="cardsmid">
+            <div class="card">
+                <img class="imgcard" src="public/img/acc1.jpeg" width="100%">
+                <h2 class="h2of">Mochila UA Loudon Unisex</h2>
+                <p class="ofantes"><del>$34,999.00</del></p>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(53)" data-product-id="53" role="button">$29,499.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(53)" data-product-id="53"><i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+                <p class="megasale">MEGA SALE!</p>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc2.jpeg" width="100%">
+                <h2 class="h2of">Guante de Golf UA Iso-Chill</h2>
+                <p class="ofantes"><del>$27,999.00</del></p>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(54)" data-product-id="54" role="button">$24,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(54)" data-product-id="54"><i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+                <p class="megasale">MEGA SALE!</p>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc3.jpeg" width="100%">
+                <h2 class="h2of">Guante de Golf UA Iso-Chill</h2>
+                <p class="ofantes"><del>$29,999.00</del></p>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(55)" data-product-id="55" role="button">$19,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(55)" data-product-id="55"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+                <p class="megasale">MEGA SALE!</p>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc4.jpeg" width="100%">
+                <h2 class="h2of">Gorra UA Blitzing Trucker</h2>
+                <p class="ofantes"><del>$32,299.00</del></p>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(56)" data-product-id="56" role="button">$19,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(56)" data-product-id="56"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+                <p class="megasale">MEGA SALE!</p>
+            </div>
+        </div>
+        <div class="cardsmid cardsmid2">
+
+            <div class="card">
+                <img class="imgcard" src="public/img/acc5.jpeg" width="100%">
+                <h2 class="h2of">Muñequeras UA Performance</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(57)" data-product-id="57" role="button">$9,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(57)" data-product-id="57"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc6.jpeg" width="100%">
+                <h2 class="h2of">Mochila Under Armour Hustle Sport</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(58)" data-product-id="58" role="button">$44,499.00
+                    </button>
+                    <a class="carrito" onclick="agregarAlCarrito(58)" data-product-id="58"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc7.jpeg" width="100%">
+                <h2 class="h2of">Mochila Under Armour Hustle Sport</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(59)" data-product-id="59" role="button">$44,499.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(59)" data-product-id="59"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc8.jpeg" width="100%">
+                <h2 class="h2of">Bolso UA Favorite para Mujer</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(60)" data-product-id="60" role="button">$29,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(60)" data-product-id="60"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cardsmid cardsmid4">
+            <div class="card">
+                <img class="imgcard" src="public/img/acc10.jpeg" width="100%">
+                <h2 class="h2of">UA Mini Bandas para la cabeza</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(61)" data-product-id="61" role="button">$10,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrit(61)" data-product-id="61"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc11.jpg" width="100%">
+                <h2 class="h2of">Medias Heatgear Invisibles Unisex</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(62)" data-product-id="62" role="button">$8,499.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(62)" data-product-id="62"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc12.jpg" width="100%">
+                <h2 class="h2of">Gorra UA Branded para Hombre</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(63)" data-product-id="63" role="button">$20,499.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(63)" data-product-id="63"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc13.jpg" width="100%">
+                <h2 class="h2of">Visera UA Golf96 para Hombre</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(64)" data-product-id="64" role="button">$21,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(64)" data-product-id="64"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cardsmid cardsmid3">
+            <div class="card">
+                <img class="imgcard" src="public/img/acc14.jpg" width="100%">
+                <h2 class="h2of">Buzo de tejido Fleece UA Rival</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(65)" data-product-id="65" role="button">$39,799.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(65)" data-product-id="65"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc15.jpg" width="100%">
+                <h2 class="h2of">Mochila tote UA Essentials</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(66)" data-product-id="66" role="button">$69,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(66)" data-product-id="66"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc16.jpeg" width="100%">
+                <h2 class="h2of">Riñonera de running UA Flex</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(67)" data-product-id="67" role="button">$19,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(67)" data-product-id="67"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgcard" src="public/img/acc9.jpeg" width="100%">
+                <h2 class="h2of">Guante Under Armour Light Training</h2>
+                <div class="precioyadd">
+                    <button class="botoncards" onclick="agregarAlCarrito(68)" data-product-id="68" role="button">$25,999.00</button>
+                    <a class="carrito" onclick="agregarAlCarrito(68)" data-product-id="68"> <i
+                            class='bx bx-cart-add'></i></a>
+                </div>
+            </div>
+        </div>
+        <section id="carrito">
+            <h2>Carrito de compras under</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0.00</p>
+            <button class="btnvaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <i class='bx bx-x' class="btnvaciar" onclick="cerrarCarrito()"></i>
+        </section>
+        <footer>
+            <div id="footer" class="footer">
+                <div class="row">
+                    <a target="_blank" href="https://www.facebook.com/UnderArmour"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/underarmour/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/underarmour"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://twitter.com/underarmour"><i class="fa fa-twitter"></i></a>
+                </div>
+
+
+                <div class="row">
+                    <ul>
+                        <li><a href="tel:+5445177353">Contactanos: +54 4517-7353</a></li>
+                        <li><a href="#">Catalogo</a></li>
+                        <li><a href="https://account.underarmour.com/es-es/privacy_and_terms">Politicas de
+                                privacidad</a></li>
+                        <li><a href="https://account.underarmour.com/es-es/privacy_and_terms">Terminos y
+                                condiciones</a>
+                        </li>
+                        <li><a href="#">Sucursales</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    UNDER ARMOUR Copyright © 2024 Under armour - Todos los derechos reservados || Diseñado y
+                    desarrollado por: Santino Sciarrillo
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

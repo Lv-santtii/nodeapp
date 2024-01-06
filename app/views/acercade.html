@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Under Armour es una marca estadounidense, creada en 1996 por Kevin Plank y encargada de producir indumentaria deportiva " />
+    <link rel="stylesheet" type="text/css" href="public/css/acercade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Under Armour Argentina</title>
+
+    <link rel="icon" href="public/img/OIP.png" type="image/icon">
+
+    <script src="public/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="top" id="top">
+
+            <div class="promo">
+                <h2 id="prom"></h2>
+                <style>
+                    @keyframes cambioTexto {
+                        0% {
+                            content: "10% de descuento abonando en efectivo";
+                        }
+
+                        33% {
+                            content: "Envio gratis en compra mayores a $100.000";
+                        }
+
+                        66% {
+                            content: "Envios a todo el pais y a Uruguay";
+                        }
+
+                        100% {
+                            content: "Abona mediante Mercado pago, efectivo o tarjetas";
+                        }
+                    }
+
+                    #prom::before {
+                        content: "Texto 1";
+                        animation: cambioTexto 12s infinite;
+                    }
+                </style>
+            </div>
+            <div class="nav" id="nav">
+                <navbar>
+                    <a href="index.html"><img class="navlogo" width="5%" src="public/img/OIP.png"></a>
+                    <div class="navitems">
+                        <p class="item1"><a href="productos.html">Productos</a></p>
+                        <p class="item2"><a href="#footer">Contacto</a></p>
+                        <p class="item3"><a href="acercade.html">Sobre nosotros</a></p>
+                        <a class="cartnav" id="abrir-carrito" onclick="toggleCarrito()"><i class='bx bx-cart'></i></a>
+                    </div>
+                </navbar>
+            </div>
+        </section>
+    </header>
+    <div class="main">
+        <img class="imgprincipal" src="public/img/zyro-image (2).png">
+    </div>
+    <section class="mid" id="mid">
+        <div class="envio">
+            <img class="envioimg" src="public/img/acercadeimg1.png" width="40%">
+            <h2 class="envioh2">Under Armour nace en Baltimore, Estados Unidos, impulsado por Kevin Plank <br>
+                Extendiendose hasta hoy, a todas partes del mundo.</h2>
+        </div>
+        <hr>
+        <div class="envio">
+            <img class="envioimg" src="public/img/acercadeimg2.png" width="40%">
+            <h2 class="envioh2">Con grandes estrategias de comercio, recibio un incremento increible <br>
+                en sus acciones y ventas.</h2>
+        </div>
+        <hr>
+        <div class="envio">
+            <img class="envioimg" src="public/img/acercadeimg3.png" width="40%">
+            <h2 class="envioh2">Debido a este aumento en las ventas, amplio su empresa a todo el mundo <br>
+                abriendo comercios en muchos paises.</h2>
+        </div>
+        <hr>
+        <div class="envio">
+            <img class="envioimg" src="public/img/acercadeimg5.png" width="40%">
+            <h2 class="envioh2">Actualmente, la evolucion y el compromiso con la marca ayudar a facilitarle la compra<br>
+                a los usuarios y dominar el mercado.</h2>
+        </div>
+        <hr>
+        <div class="envio">
+            <img class="envioimg" src="public/img/acercadeimg4.png" width="40%">
+            <h2 class="envioh2">Con el pasar de los años, UA se establecio en el mercado textil y hoy es <br>
+                una de las multinacionales mas importantes internacionalmente.</h2>
+        </div>
+        <hr>
+        <div class="envio">
+            <img id="ualogoacercade" class="envioimg" src="public/img/OIP.png" width="20%">
+            <h2 id="h2acercadelogo" class="envioh2">Under armour, lider en <br>
+                Precio y calidad.</h2>
+        </div>
+        <section id="carrito">
+            <h2>Carrito de compras under</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0.00</p>
+            <button class="btnvaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <i class='bx bx-x' class="btnvaciar" onclick="cerrarCarrito()"></i>
+        </section>
+        <footer>
+            <div id="footer" class="footer">
+                <div class="row">
+                    <a target="_blank" href="https://www.facebook.com/UnderArmour"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/underarmour/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/underarmour"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://twitter.com/underarmour"><i class="fa fa-twitter"></i></a>
+                </div>
+
+
+                <div class="row">
+                    <ul>
+                        <li><a href="tel:+5445177353">Contactanos: +54 4517-7353</a></li>
+                        <li><a href="#">Catalogo</a></li>
+                        <li><a href="https://account.underarmour.com/es-es/privacy_and_terms">Politicas de
+                                privacidad</a></li>
+                        <li><a href="https://account.underarmour.com/es-es/privacy_and_terms">Terminos y
+                                condiciones</a>
+                        </li>
+                        <li><a href="#">Sucursales</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    UNDER ARMOUR Copyright © 2024 Under armour - Todos los derechos reservados || Diseñado y
+                    desarrollado por: Santino Sciarrillo
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
